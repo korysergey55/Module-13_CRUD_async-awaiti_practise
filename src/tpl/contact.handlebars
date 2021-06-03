@@ -1,0 +1,23 @@
+<table>
+    <tr>
+        <th>Email</th>
+        <th>Name</th>
+        <th>Password</th>
+        <th>Phone</th>
+        <th>Subscription</th>
+        <th>action <button data-action="create" type="button">+</button></th>
+    </tr>
+    {{#each this}}
+        <tr data-id="{{_id}}">
+            <td>{{email}}</td>
+            <td>{{name}}</td>
+            <td>{{password}}</td>
+            <td>{{phone}}</td>
+            <td>{{subscription}}</td>
+            <td>
+                <button data-action="edit" type="button">E</button>
+                <button data-action="delete" type="button">D</button>
+            </td>
+        </tr>
+    {{/each}}
+</table>

@@ -1,0 +1,19 @@
+body {
+    display: flex;
+}
+button {
+    cursor: pointer;
+}
+table th {
+    border-bottom: 1px solid black;
+}
+table {
+    text-align: center;
+    border: 1px solid black;
+}
+#form {
+    width: 48%;
+}
+#content {
+    width: 48%;
+}
