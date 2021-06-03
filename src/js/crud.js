@@ -1,7 +1,6 @@
 const BASE_URL = 'http://localhost:3033';
 
 // ********************* READ-('GET') ********************* //
-// ********************* file 1 *********************//
 const getUsers = () => {
   return fetch(`${BASE_URL}/users`).then(res => res.json());
 };
@@ -60,8 +59,7 @@ saveUser(user).then(user => console.log(user));
 
 // ********************* UPDATE-('PATCH','PUT')  ********************* //
 
-//  **************************** 'PATCH'  ******************************//
-// изменяет конкретное поле которое мы передали в id
+//  **************************** 'PATCH'- изменяет конкретное поле которое мы передали в id  ******************************//
 const editUser = (id, dataToUpdate) => {
   const options = {
     method: 'PATCH',
@@ -83,8 +81,7 @@ const userId = 2;
 
 editUser(userId, update).then(console.log);
 
-//  ********************* 'PUT'  *********************//
-// полностью перезаписывает весь файл
+//  ********************* 'PUT'- полностью перезаписывает весь файл *********************//
 const replaceUser = (id, dataToUpdate) => {
   const options = {
     method: 'PUT',
