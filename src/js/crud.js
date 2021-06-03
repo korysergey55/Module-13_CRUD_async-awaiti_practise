@@ -48,12 +48,12 @@ const saveUser = user => {
   const url = `${BASE_URL}/users`;
   return fetch(url, options).then(res => res.json());
 };
-const user = {
-  first_name: 'John',
-  last_name: 'Guff',
-  email: 'guff3@lines.com',
-  icon: 'https://robohash.org/corruptilaboresint.png?size=30x30&set=set1',
-};
+// const user = {
+//   first_name: 'John',
+//   last_name: 'Guff',
+//   email: 'guff3@lines.com',
+//   icon: 'https://robohash.org/corruptilaboresint.png?size=30x30&set=set1',
+// };
 
 saveUser(user).then(user => console.log(user));
 
@@ -73,10 +73,10 @@ const editUser = (id, dataToUpdate) => {
   return fetch(url, options).then(res => res.json());
 };
 
-const update = {
-  email: 'aaa@aaa.aa',
-  last_name: 'Sinatra',
-};
+// const update = {
+//   email: 'aaa@aaa.aa',
+//   last_name: 'Sinatra',
+// };
 const userId = 2;
 
 editUser(userId, update).then(console.log);
@@ -95,12 +95,12 @@ const replaceUser = (id, dataToUpdate) => {
   return fetch(url, options).then(res => res.json());
 };
 
-const update = {
-  first_name: 'Ret',
-  last_name: 'Guff',
-  email: 'guff3@lines.com',
-  icon: 'https://robohash.org/corruptilaboresint.png?size=30x30&set=set1',
-};
+// const update = {
+//   first_name: 'Ret',
+//   last_name: 'Guff',
+//   email: 'guff3@lines.com',
+//   icon: 'https://robohash.org/corruptilaboresint.png?size=30x30&set=set1',
+// };
 
 const update = {
   first_name: 'Jack',
