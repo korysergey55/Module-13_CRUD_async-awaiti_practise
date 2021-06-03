@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "first_name": "Ret",
+      "last_name": "Guff",
+      "email": "gruteff3@lines.com",
+      "icon": "https://robohash.org/corruptilaboresint.png?size=30x30&set=set1",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "first_name": "Tammie",
+      "last_name": "Sinatra",
+      "email": "aaa@aaa.aa",
+      "icon": "https://robohash.org/harumindebitis.png?size=30x30&set=set1"
+    },
+    {
+      "id": 3,
+      "first_name": "Matthias",
+      "last_name": "Sauter",
+      "email": "msauteeer2@hc360.com",
+      "icon": "https://robohash.org/suntmolestiaeid.png?size=30x30&set=set1"
+    },
+    {
+      "first_name": "Reter",
+      "last_name": "Guff",
+      "email": "gruff3@lines.com",
+      "icon": "https://cdn4.iconfinder.com/data/icons/pretty_office_3/256/Add-Male-User.png",
+      "id": 4
+    }
+  ]
+}

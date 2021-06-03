@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Users</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!------------------------- ADD USER FORM --------------------------------------->
+    <h3>Add new user:</h3>
+    <form class="mb-4" autocomplete="off">
+      <div class="row mb-3">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="First name" name="first_name" />
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Last name" name="last_name" />
+        </div>
+      </div>
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">@</span>
+        <input type="text" class="form-control" placeholder="Email" name="email" />
+      </div>
+      <button type="submit" class="btn btn-info">Save</button>
+    </form>
+
+    <!------------------------- USERS LIST --------------------------------------->
+
+    <div class="users-container">
+      <h3>Users:</h3>
+      <ul class="users-list d-flex flex-wrap"></ul>
+    </div>
+
+    <!------------------------- EDIT USER FORM --------------------------------------->
+
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form class="mb-4" autocomplete="off" id="modal-form">
+              <div class="row mb-3">
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="First name"
+                    name="first_name"
+                  />
+                </div>
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Last name"
+                    name="last_name"
+                  />
+                </div>
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">@</span>
+                <input type="text" class="form-control" placeholder="Email" name="email" />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" data-action="update">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------------------- TOAST --------------------------------------->
+
+    <div class="position-fixed top-0 end-0 p-3" style="z-index: 9000">
+      <div
+        id="liveToast"
+        class="toast hide bg-danger"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="toast-header">
+          <strong class="me-auto">Error</strong>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="toast-body text-white"></div>
+      </div>
+    </div>
+
+    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
+    <script src="./index.js"></script>
+  </body>
+</html>
